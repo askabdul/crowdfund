@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box; //so the border and padding doesnt add to width
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-app {
+      position: relative;
+  }

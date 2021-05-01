@@ -1,0 +1,33 @@
+.hero {
+  background-image: url("./../../../../assets/images/image-hero-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  .header-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3em;
+    span {
+      display: contents;
+      padding-top: 1em;
+    }
+    nav {
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        li {
+          margin-right: 1em;
+          a {
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                color: #c4c4c4;
+                transition: color 0.3s ease-in;
+            }
+          }
+        }
+      }
+    }
+  }
+}

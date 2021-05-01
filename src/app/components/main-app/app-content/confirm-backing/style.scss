@@ -1,0 +1,50 @@
+.confirm-backing {
+    border-radius: 0.4em !important;
+    width: 24% !important;
+    .el-dialog__header {
+        .el-dialog__title {
+
+        }
+        .el-dialog__headerbtn {
+            display: none;
+            .el-dialog__close {
+
+            }
+        }
+    }
+    .el-dialog__body {
+        .dialog-content {
+            text-align: center;
+            margin-top: -2em;
+            .check {
+                padding-bottom: 2em;
+            }
+            h1 {
+                font-size: 1.1em;
+                color: #0b0b0b;
+                padding-bottom: 1.3em;
+            }
+            p {
+                font-size: 0.9em;
+                color: #848484;
+                line-height: 2;
+            }
+            button {
+                background-color: #3cb4ab;
+                    color: #fff;
+                    padding: 0.7em 1.4em;
+                    border: hidden;
+                    border-radius: 3.125em;
+                    margin-top: 2em;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #157a74;
+                        transition: all 0.3s ease-in;
+                    }
+                    &:focus {
+                      outline: none;
+                    }
+            }
+        }
+    }
+}

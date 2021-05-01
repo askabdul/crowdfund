@@ -1,0 +1,513 @@
+:root {
+  --green: #3cb4ab;
+  --light-green: #80c6c3;
+  --dark: #0b0b0b;
+  --grey: #848484;
+  --grey-btn-color: #efecec;
+  --icon-bg: #2f2f2f;
+  --bg-content: #eee7e7;
+  --card-bg: #ffffff;
+  --light-btn: #d0eae6;
+  --btn: #cbcbcb;
+}
+
+.back-project {
+  min-width: 35% !important;
+  border-radius: 0.4em !important;
+  .el-dialog__header {
+    .el-dialog__title {
+    }
+    .el-dialog__headerbtn {
+      font-size: 10px;
+      font-weight: 700;
+      .el-dialog__close {
+        font-weight: 700;
+        &:hover {
+          color: var(--dark);
+        }
+      }
+    }
+  }
+  .el-dialog__body {
+    .dialog-content {
+      .el-radio-group {
+        .no_reward {
+          position: relative;
+          border: 1px solid #ebeaea;
+          margin-top: 2em;
+          padding: 1em;
+          border-radius: 0.4em;
+          margin-bottom: 2em;
+          min-width: 32.5vw;
+          min-height: 11vh;
+          .el-radio__input {
+            .el-radio__inner {
+              .el-radio__original {
+              }
+            }
+          }
+          .el-radio__label {
+            .radio-content {
+              position: absolute;
+              left: 4em;
+              top: -1em;
+              h1 {
+                font-size: 1em;
+                padding-bottom: 1em;
+                &:hover {
+                    color: var(--green);
+                    transition: color 0.3s;
+                }
+              }
+              p {
+                font-size: 0.9em;
+                line-height: 2;
+                color: #9e9c9c;
+              }
+            }
+            div {
+              margin-top: 2em;
+              hr {
+                margin-top: 6em;
+                border-top: 1px #ffffff solid;
+                margin-right: -1em;
+                margin-left: -1em;
+              }
+              .pledging {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 1em;
+                margin-top: 0em;
+
+                p {
+                  font-size: 0.9em;
+                  color: #9e9c9c;
+                  margin-top: 3em;
+                }
+                .input-btn {
+                  display: flex;
+                  input {
+                    border: 2px solid #d4d0d0;
+                    border-radius: 3.125em;
+                    width: 5vw;
+                    margin-right: 1em;
+                    padding: 0.7em;
+                    padding-left: 2.5em;
+                    color: var(--dark);
+                    font-weight: 700;
+                    &:hover {
+                        border: 1px solid var(--light-green);
+                        transition: border 0.3s;
+                    }
+                    &:focus {
+                      outline: none;
+                    }
+                  }
+                  span {
+                    position: relative;
+                    top: 1em;
+                    left: 1.7em;
+                    color: #9e9c9c;
+                  }
+                  button {
+                    background-color: var(--green);
+                    color: var(--card-bg);
+                    padding: 1em 1.8em;
+                    border: hidden;
+                    border-radius: 3.125em;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #157a74;
+                        transition: all 0.3s;
+                    }
+                    &:focus {
+                      outline: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &:focus-within {
+            border: 1px solid #3db3ac;
+          }
+        }
+        .with_stand {
+          border: 1px solid #ebeaea;
+          padding: 1em;
+          min-width: 32.5vw;
+          min-height: 11vh;
+          margin-left: 0;
+          margin-bottom: 2em;
+          border-radius: 0.4em;
+
+          .el-radio__input {
+            .el-radio__inner {
+            }
+            .el-radio__original {
+            }
+          }
+          .el-radio__label {
+            .radio-stand-content {
+              position: absolute;
+              left: 4em;
+              top: 1em;
+              .stand-header {
+                display: flex;
+                justify-content: space-between;
+                .first-header {
+                  display: flex;
+                  justify-content: space-between;
+                  width: 15vw;
+                  h1 {
+                    font-size: 1em;
+                    padding-bottom: 1em;
+                    &:hover {
+                        color: var(--green);
+                        transition: color 0.3s;
+                    }
+                  }
+                  .buck {
+                    color: var(--green);
+                    font-size: 1em;
+                    font-weight: 500;
+                  }
+                }
+                .number-left {
+                  color: var(--dark);
+                  font-weight: 700;
+                  small {
+                    font-size: 0.8em;
+                    color: var(--grey);
+                  }
+                }
+              }
+              p {
+                font-size: 0.9em;
+                line-height: 2;
+                color: #9e9c9c;
+              }
+            }
+            .show_if {
+              hr {
+                margin-top: 5em;
+                border-top: 1px #ffffff solid;
+                margin-right: -1em;
+                margin-left: -1em;
+              }
+              .pledging {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 1em;
+                margin-top: 0em;
+
+                p {
+                  font-size: 0.9em;
+                  color: #9e9c9c;
+                  margin-top: 3em;
+                }
+                .input-btn {
+                  display: flex;
+                  margin-top: 1.5em;
+                  input {
+                    border: 2px solid #d4d0d0;
+                    border-radius: 3.125em;
+                    width: 5vw;
+                    margin-right: 1em;
+                    padding: 0.7em;
+                    padding-left: 2.5em;
+                    color: var(--dark);
+                    font-weight: 700;
+                    &:hover {
+                        border: 1px solid var(--light-green);
+                        transition: border 0.3s;
+                    }
+                    &:focus {
+                      outline: none;
+                    }
+                  }
+                  span {
+                    position: relative;
+                    top: 1em;
+                    left: 1.7em;
+                    color: #9e9c9c;
+                  }
+                  button {
+                    background-color: var(--green);
+                    color: var(--card-bg);
+                    padding: 1em 1.8em;
+                    border: hidden;
+                    border-radius: 3.125em;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #157a74;
+                        transition: all 0.3s;
+                    }
+                    &:focus {
+                      outline: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &:focus-within {
+            border: 1px solid #3db3ac;
+          }
+        }
+
+        .with_black {
+          border: 1px solid #ebeaea;
+          padding: 1em;
+          min-width: 32.5vw;
+          min-height: 11vh;
+          margin-left: 0;
+          margin-bottom: 2em;
+          border-radius: 0.4em;
+
+          .el-radio__input {
+            .el-radio__inner {
+            }
+            .el-radio__original {
+            }
+          }
+          .el-radio__label {
+            .radio-black-content {
+              position: absolute;
+              left: 4em;
+              top: 1em;
+              .black-header {
+                display: flex;
+                justify-content: space-between;
+                width: 27.5vw;
+                .first-header {
+                  display: flex;
+                  justify-content: space-between;
+                  width: 17vw;
+                  h1 {
+                    font-size: 1em;
+                    padding-bottom: 1em;
+                    &:hover {
+                        color: var(--green);
+                        transition: color 0.3s;
+                    }
+                  }
+                  .buck {
+                    color: var(--green);
+                    font-size: 1em;
+                    font-weight: 500;
+                  }
+                }
+                .number-left {
+                  color: var(--dark);
+                  font-weight: 700;
+                  small {
+                    font-size: 0.8em;
+                    color: var(--grey);
+                  }
+                }
+              }
+              p {
+                font-size: 0.9em;
+                line-height: 2;
+                color: #9e9c9c;
+              }
+            }
+            .show_if {
+              hr {
+                margin-top: 5em;
+                border-top: 1px #ffffff solid;
+                margin-right: -1em;
+                margin-left: -1em;
+              }
+              .pledging {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 1em;
+                margin-top: 0em;
+
+                p {
+                  font-size: 0.9em;
+                  color: #9e9c9c;
+                  margin-top: 3em;
+                }
+                .input-btn {
+                  display: flex;
+                  margin-top: 1.5em;
+                  input {
+                    border: 2px solid #d4d0d0;
+                    border-radius: 3.125em;
+                    width: 5vw;
+                    margin-right: 1em;
+                    padding: 0.7em;
+                    padding-left: 2.5em;
+                    color: var(--dark);
+                    font-weight: 700;
+                    &:hover {
+                        border: 1px solid var(--light-green);
+                        transition: border 0.3s;
+                    }
+                    &:focus {
+                      outline: none;
+                    }
+                  }
+                  span {
+                    position: relative;
+                    top: 1em;
+                    left: 1.7em;
+                    color: #9e9c9c;
+                  }
+                  button {
+                    background-color: var(--green);
+                    color: var(--card-bg);
+                    padding: 1em 1.8em;
+                    border: hidden;
+                    border-radius: 3.125em;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #157a74;
+                        transition: all 0.3s;
+                    }
+                    &:focus {
+                      outline: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:focus-within {
+            border: 1px solid #3db3ac;
+          }
+        }
+
+        .with_mahogany {
+          border: 1px solid #ebeaea;
+          padding: 1em;
+          min-width: 32.5vw;
+          min-height: 11vh;
+          margin-left: 0;
+          margin-bottom: 2em;
+          border-radius: 0.4em;
+
+          .el-radio__input {
+            .el-radio__inner {
+            }
+            .el-radio__original {
+            }
+          }
+          .el-radio__label {
+            .radio-mahogany-content {
+              position: absolute;
+              left: 4em;
+              top: 1em;
+              .mahogany-header {
+                display: flex;
+                justify-content: space-between;
+                width: 27.5vw;
+                .first-header {
+                  display: flex;
+                  justify-content: space-between;
+                  width: 20vw;
+                  h1 {
+                    font-size: 1em;
+                    padding-bottom: 1em;
+                    &:hover {
+                        color: var(--green);
+                        transition: color 0.3s;
+                    }
+                  }
+                  .buck {
+                    color: var(--green);
+                    font-size: 1em;
+                    font-weight: 500;
+                  }
+                }
+                .number-left {
+                  color: var(--dark);
+                  font-weight: 700;
+                  small {
+                    font-size: 0.8em;
+                    color: var(--grey);
+                  }
+                }
+              }
+              p {
+                font-size: 0.9em;
+                line-height: 2;
+                color: #9e9c9c;
+              }
+            }
+            .show_if {
+              hr {
+                margin-top: 5em;
+                border-top: 1px #ffffff solid;
+                margin-right: -1em;
+                margin-left: -1em;
+              }
+              .pledging {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 1em;
+                margin-top: 0em;
+
+                p {
+                  font-size: 0.9em;
+                  color: #9e9c9c;
+                  margin-top: 3em;
+                }
+                .input-btn {
+                  display: flex;
+                  margin-top: 1.5em;
+                  input {
+                    border: 2px solid #d4d0d0;
+                    border-radius: 3.125em;
+                    width: 5vw;
+                    margin-right: 1em;
+                    padding: 0.7em;
+                    padding-left: 2.5em;
+                    color: var(--dark);
+                    font-weight: 700;
+                    &:hover {
+                        border: 1px solid var(--light-green);
+                        transition: border 0.3s;
+                    }
+                    &:focus {
+                      outline: none;
+                    }
+                  }
+                  span {
+                    position: relative;
+                    top: 1em;
+                    left: 1.7em;
+                    color: #9e9c9c;
+                  }
+                  button {
+                    background-color: var(--green);
+                    color: var(--card-bg);
+                    padding: 1em 1.8em;
+                    border: hidden;
+                    border-radius: 3.125em;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #157a74;
+                        transition: all 0.3s;
+                    }
+                    &:focus {
+                      outline: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:focus-within {
+            border: 1px solid #3db3ac;
+          }
+        }
+      }
+    }
+  }
+}
