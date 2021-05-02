@@ -3,7 +3,7 @@ import { AppContent } from './app-content';
 import './style.scss';
 
 
-export const MainApp = () => {
+export const MainApp = (props) => {
     return (
         <div className="main-app">
             <AppHeader />

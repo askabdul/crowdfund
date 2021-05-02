@@ -4,14 +4,25 @@
   background-repeat: no-repeat;
   height: 65vh;
   .header-content {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 3em;
-    span {
-      display: contents;
-      padding-top: 1em;
-    }
+    // display: flex;
+    // justify-content: space-around;
+    // padding-top: 3em;
+    
     nav {
+      display: flex;
+      flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3em;
+      span {
+        display: flex;
+      }
+      .menu {
+        background-color: transparent;
+        display: none;
+        border: 0;
+        cursor: pointer;
+      }
       ul {
         display: flex;
         justify-content: space-evenly;
@@ -23,11 +34,61 @@
             color: #fff;
             &:hover {
                 color: #c4c4c4;
-                transition: color 0.3s ease-in;
+                transition: color 0.3s;
             }
           }
         }
       }
     }
+
+  }
+}
+
+@media screen and (max-width:767px){
+  .hero {
+    background-image: url("./../../../../assets/images/image-hero-mobile.jpg");
+  }
+
+
+  .menu {
+    display: block !important;
+
+  }
+  nav {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .nav-ul {
+    display: none !important;
+    flex-direction: column;
+    width: 100% !important;
+    background-color: #fff;
+    text-align: left;
+    padding-left: 1em;
+    margin-top: 1.5em;
+    border-radius: 0.5em;
+    height: 20vh;
+    transition: all 0.3s;
+  }
+
+  .hero .header-content nav ul li:first-of-type {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 0.7em;
+  }
+
+  .hero .header-content nav ul li:last-of-type {
+    border-top: 1px solid #eaeaea;
+    padding-top: 0.7em;
+  }
+
+  .hero .header-content nav ul li a {
+    color: #000;
+    display: block;
+  }
+
+  .nav-ul.show {
+    display: flex !important;
+    transition: all 0.3s;
   }
 }
