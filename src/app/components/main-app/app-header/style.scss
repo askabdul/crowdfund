@@ -13,7 +13,7 @@
       flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 3em;
+    padding: 1em;
       span {
         display: flex;
       }
@@ -47,6 +47,10 @@
 @media screen and (max-width:767px){
   .hero {
     background-image: url("./../../../../assets/images/image-hero-mobile.jpg");
+
+    .hero .header-content nav {
+      background-color: red !important;
+    }
   }
 
 

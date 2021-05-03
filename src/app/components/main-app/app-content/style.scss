@@ -61,7 +61,7 @@ article {
             transition: all 0.3s ease-in;
           }
         }
-        
+
         .bookmark-btn {
           background-color: var(--grey-btn-color);
           color: #8a8a8a;
@@ -77,13 +77,12 @@ article {
             background-color: #f4f4f4;
             transition: all 0.3s;
           }
-          
+
           img {
             position: relative;
             top: 0.0875em;
             height: 3em;
             svg {
-              
             }
           }
           .btn-label {
@@ -103,7 +102,6 @@ article {
             top: -1.5em;
             left: 1em;
           }
-
         }
       }
     }
@@ -187,7 +185,7 @@ article {
       }
       .stand {
         .bamboo {
-          border: 1px solid #f4f4f4;
+          border: 1px solid #e4e4e4;
           margin-top: 2em;
           padding: 1em;
           border-radius: 0.4em;
@@ -235,7 +233,7 @@ article {
           }
         }
         .black-edition {
-          border: 1px solid #f4f4f4;
+          border: 1px solid #e4e4e4;
           margin-top: 2em;
           padding: 1em;
           border-radius: 0.4em;
@@ -283,7 +281,7 @@ article {
           }
         }
         .special-edition {
-          border: 1px solid #f4f4f4;
+          border: 1px solid #e4e4e4;
           margin-top: 2em;
           padding: 1em;
           border-radius: 0.4em;
@@ -333,7 +331,171 @@ article {
       }
     }
   }
-  @media screen and (min-width:320px) and (max-width:480px){
-    
- }
+}
+
+@media screen and (max-width: 767px) {
+
+  article .content .riser h2 {
+    font-size: 1em;
+  }
+
+  article .content .riser .bamboo-span {
+    font-size: 0.6em;
+    line-height: 2;
+  }
+
+  article .content .riser .logo {
+    top: -1.5em;
+  }
+
+  article .content .riser .logo img {
+    height: 2.5em;
+  }
+  article .content .riser {
+    text-align: center;
+  }
+
+  article .content .about h2 {
+    font-size: 0.8em;
+  }
+
+  article .content .about .stand .bamboo .pledge h3 {
+    font-size: 0.7em;
+    line-height: 2;
+  }
+
+  article .content .about .stand .bamboo .pledge span {
+    font-size: 0.7em;
+  }
+
+  article .content .about .stand .black-edition .edition h3 {
+    font-size: 0.7em;
+    line-height: 2;
+
+  }
+
+  article .content .about .stand .black-edition .edition span {
+    font-size: 0.7em;
+
+  }
+
+  article .content .about .stand .special-edition .mahogany h3 {
+    font-size: 0.7em;
+    line-height: 2;
+
+  }
+
+  article .content .about .stand .special-edition .mahogany span {
+    font-size: 0.7em;
+  }
+
+  article .content .about .stand .special-edition .mahogany {
+    flex-wrap: wrap;
+  }
+
+  article .content .about .stand .special-edition .stock {
+    flex-wrap: wrap;
+  }
+
+  article .content .about .stand .bamboo .remnant span {
+    margin-bottom: 1em;
+  }
+
+  article .content .about .stand .black-edition .reward span {
+    margin-bottom: 1em;
+
+  }
+
+  article .content .about .stand .special-edition .stock span {
+    margin-bottom: 1em;
+
+  }
+
+  article .content .about p {
+    font-size: 0.6em;
+  }
+
+  article .content .riser .btns .bookmark-btn .btn-label {
+    display: none;
+  }
+
+  article .content .riser .btns .bookmark-btn {
+    border: hidden;
+    border-radius: 3.125em;
+    padding-right: 0em;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+  }
+
+  article .content .riser .btns .bookmark-btn img {
+    height: 2.5em;
+  }
+
+  article .content .riser .btns .project-btn {
+    font-size: 0.7em;
+    padding: 0.6em 3em;
+  }
+
+  article .content .backers .backers-figures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: unset;
+  }
+
+  article .content .backers .backers-figures p:first-of-type {
+    border-right: unset;
+    border-bottom: 1px solid var(--grey-btn-color);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  article .content .backers .backers-figures p:first-of-type small {
+    font-size: 0.4em;
+  }
+
+  article .content .backers .backers-figures p:not(:first-child):not(:last-child) {
+    border-right: unset;
+    border-bottom: 1px solid var(--grey-btn-color);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  article .content .backers .backers-figures p:not(:first-child):not(:last-child) small {
+    font-size: 0.4em;
+  }
+
+  article .content .backers .backers-figures p:last-of-type {
+    text-align: center;
+  }
+
+  article .content .backers .backers-figures p:last-of-type small {
+    font-size: 0.4em;
+  }
+
+  article .content .about .stand .bamboo .pledge {
+    flex-wrap: wrap;
+  }
+
+  article .content .about .stand .bamboo .remnant {
+    flex-wrap: wrap;
+  }
+
+  article .content .about .stand .black-edition .edition {
+    flex-wrap: wrap;
+  }
+
+  article .content .about .stand .black-edition .reward {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  article .content .backers .backers-figures {
+  }
 }
