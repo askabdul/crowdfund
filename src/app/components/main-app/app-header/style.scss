@@ -4,16 +4,12 @@
   background-repeat: no-repeat;
   height: 65vh;
   .header-content {
-    // display: flex;
-    // justify-content: space-around;
-    // padding-top: 3em;
-    
     nav {
       display: flex;
       flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1em;
+      justify-content: space-around;
+      align-items: center;
+      padding: 3em;
       span {
         display: flex;
       }
@@ -33,30 +29,32 @@
             text-decoration: none;
             color: #fff;
             &:hover {
-                color: #c4c4c4;
-                transition: color 0.3s;
+              color: #c4c4c4;
+              transition: color 0.3s;
             }
           }
         }
       }
     }
-
   }
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width: 767px) {
   .hero {
     background-image: url("./../../../../assets/images/image-hero-mobile.jpg");
-
-    .hero .header-content nav {
-      background-color: red !important;
-    }
   }
 
+  .hero .header-content nav ul li a {
+    font-size: 0.8em;
+    font-weight: 700;
+  }
+
+  .hero .header-content nav {
+    padding: 1em;
+  }
 
   .menu {
     display: block !important;
-
   }
   nav {
     display: flex !important;

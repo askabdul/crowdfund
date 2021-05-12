@@ -394,11 +394,25 @@ article {
   }
 
   article .content .about .stand .special-edition .stock {
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  article .content .about .stand .special-edition .stock button{
+    font-size: 0.6em;
+    width: 12em;
+    padding: 1em 2em;
   }
 
   article .content .about .stand .bamboo .remnant span {
     margin-bottom: 1em;
+  }
+
+  article .content .about .stand .bamboo .remnant button {
+    margin-bottom: 1em;
+    font-size: 0.6em;
+    width: 12em;
+    padding: 1em 2em;
+
   }
 
   article .content .about .stand .black-edition .reward span {
@@ -483,19 +497,20 @@ article {
   }
 
   article .content .about .stand .bamboo .remnant {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   article .content .about .stand .black-edition .edition {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   article .content .about .stand .black-edition .reward {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-}
 
-@media screen and (min-width: 767px) {
-  article .content .backers .backers-figures {
+  article .content .about .stand .black-edition .reward button {
+    font-size: 0.6em;
+    width: 12em;
+    padding: 1em 2em;
   }
 }

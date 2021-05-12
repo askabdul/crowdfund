@@ -511,3 +511,36 @@
     }
   }
 }
+
+
+@media screen and (max-width: 767px) {
+  .back-project {
+    min-width: 95% !important;
+  }
+
+  .back-project .el-dialog__header .el-dialog__title {
+    font-size: 0.7em;
+  }
+
+  .dialog-content p {
+    font-size: 0.7em;
+    line-height: 2;
+  }
+
+  .el-dialog__body .dialog-content .el-radio-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .back-project .el-dialog__body .dialog-content .el-radio-group .no_reward .el-radio__label .radio-content {
+    left: 3em;
+    top: -0.8em;
+  }
+
+  .back-project .el-dialog__body .dialog-content .el-radio-group .no_reward .el-radio__label .radio-content h1 {
+    font-size: 0.7em;
+  }
+  .back-project .el-dialog__body .dialog-content .el-radio-group .no_reward .el-radio__label .radio-content p {
+    font-size: 0.6em;
+  }
+}
